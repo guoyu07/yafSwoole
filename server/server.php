@@ -40,15 +40,10 @@ class HttpServer
 			}
 
 			// TODO handle img
-
 			ob_start();
 			try {
-				$yaf_request = new Yaf_Request_Http( 
-					HttpServer::$server['request_uri']);
-
-			    $this->application
-			    ->getDispatcher()->dispatch($yaf_request);
-			    
+				$yaf_request = new Yaf_Request_Http(HttpServer::$server['request_uri']);
+			    $this->application->getDispatcher()->dispatch($yaf_request);
 			    // unset(Yaf_Application::app());
 			} catch ( Yaf_Exception $e ) {
 				var_dump( $e );
@@ -71,8 +66,7 @@ class HttpServer
 
 	public function onWorkerStart() {
 		define('APPLICATION_PATH', dirname(__DIR__));
-		$this->application = new Yaf_Application( APPLICATION_PATH . 
-					"/conf/application.ini");
+		$this->application = new Yaf_Application( APPLICATION_PATH . "/conf/application.ini");
 		ob_start();
 		$this->application->bootstrap()->run();
 		ob_end_clean();
