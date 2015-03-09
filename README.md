@@ -47,9 +47,10 @@ yafSwoole
     ```
 
 ## How to run
-1. cd yiiSwoole/application
-2. php server.php
-3. Open your browser and enter http://ip:9501
+1. https://github.com/kcloze/yafSwoole.git
+2. cd yafSwoole
+3. php server.php
+4. Open your browser and enter http://ip:9501
 
 ## Run with php-fpm
 1. This application in a state of  beta,if you find some bug,it can run with php-fpm to fix bug
