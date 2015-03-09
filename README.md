@@ -7,6 +7,7 @@ yafSwoole
 ## Requirements
 
 * PHP 5.3+
+* yaf 2.2+
 * Swoole 1.7.8+
 * Linux, OS X and basic Windows support (Thinks to cygwin)
 
@@ -56,7 +57,7 @@ yafSwoole
 3. Open your browser and enter http://ip/index.php
 
 ##Thanks
-1.When beginning,this project fork from https://github.com/LinkedDestiny/swoole-yaf
-2.this fork will add some thirdparty lib to yaf
+1. When beginning,this project fork from https://github.com/LinkedDestiny/swoole-yaf
+2. this fork will add some thirdparty lib to yaf
 
 
