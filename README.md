@@ -1,24 +1,62 @@
-##**swoole-yaf**
-结合PHP的Yaf框架和Swoole扩展的高性能PHP Web框架
+yafSwoole
+========
 
-##**描述**
-底层使用Swoole内置的swoole_http_server提供服务
-上层应用使用Yaf框架搭建
+* Yaf with Swoole Http_Server
+* In high-concurrency situations,will be better than php-fpm
+
+## Requirements
+
+* PHP 5.3+
+* Swoole 1.7.8+
+* Linux, OS X and basic Windows support (Thinks to cygwin)
+
+## Installation Yaf
+1. Install via pecl
+    
+    ```
+    pecl install yaf
+    ```
+
+2. Install from source
+
+    ```
+    git clone https://github.com/php/pecl-system-yaf.git
+    cd pecl-system-yaf
+    phpize
+    ./configure
+    make && make install
+    ```
+
+## Installation Swoole
+
+1. Install via pecl
+    
+    ```
+    pecl install swoole
+    ```
+
+2. Install from source
+
+    ```
+    git clone https://github.com/swoole/swoole-src.git
+    cd swoole-src
+    phpize
+    ./configure
+    make && make install
+    ```
+
+## How to run
+1. cd yiiSwoole/application
+2. php server.php
+3. Open your browser and enter http://ip:9501
+
+## Run with php-fpm
+1. This application in a state of  beta,if you find some bug,it can run with php-fpm to fix bug
+2. Set nginx root dir with yafSwoole/application
+3. Open your browser and enter http://ip/index.php
+
+##Thanks
+1.When beginning,this project fork from https://github.com/LinkedDestiny/swoole-yaf
+2.this fork will add some thirdparty lib to yaf
 
 
-##**发起人**
-Lancelot（李丹阳） from **LinkedDestiny**（**牵机工作室**）
-
-##**使用说明**
-打开终端
-cd swoole-yaf
-php server/server.php
-
-打开浏览器，输入http://localhost:9501
-
-
-##**swoole版本**
-swoole-1.7.8+版本
-
-##**yaf版本**
-任意stable版本
