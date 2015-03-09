@@ -8,7 +8,7 @@ yafSwoole
 
 * PHP 5.3+
 * yaf 2.2+
-* Swoole 1.7.8+
+* Swoole 1.7.10+
 * Linux, OS X and basic Windows support (Thinks to cygwin)
 
 ## Installation Yaf
@@ -54,7 +54,7 @@ yafSwoole
 
 ## Run with php-fpm
 1. This application in a state of  beta,if you find some bug,it can run with php-fpm to fix bug
-2. Set nginx root dir with yafSwoole/application
+2. Set nginx root dir with yafSwoole
 3. Open your browser and enter http://ip/index.php
 
 ##Thanks
